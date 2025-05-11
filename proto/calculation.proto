@@ -1,0 +1,26 @@
+syntax = "proto3"; // версия proto файлов
+package calculation; // название пакета
+option go_package = "github.com/uncomonq/FinalCalc/proto";
+
+message GetTaskRequest {}
+
+message GetTaskResponse {
+    uint32 id = 1; //идентификатор задачи
+    double arg1 = 2; // имя первого аргумента
+    double arg2 = 3;  // имя второго аргумента
+    string operation = 4; // операция
+    int32 operation_time = 5; //время выполнения операции
+}
+
+message SaveTaskResultRequest {
+   uint32 id = 1; //идентификатор задачи
+   double result = 2; // результат задачи
+}
+
+message SaveTaskResultResponse {}
+
+
+service CalculatorService {
+    rpc GetTask (GetTaskRequest) returns (GetTaskResponse);
+    rpc SaveTaskResult (SaveTaskResultRequest) returns (SaveTaskResultResponse);
+}

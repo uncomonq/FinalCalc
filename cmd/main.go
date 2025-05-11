@@ -1,7 +1,7 @@
 package main
 
 import (
-	app "https://github.com/uncomonq/FinalCalc/internal/application"
+	app "github.com/uncomonq/FinalCalc/internal/application"
 )
 
 func main() {

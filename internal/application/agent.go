@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/uncomonq/FinalCalc/pckg/consts"
+	"github.com/uncomonq/FinalCalc/pckg/types"
+	pb "github.com/uncomonq/FinalCalc/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	"https://github.com/uncomonq/FinalCalc/pckg/consts"
-	"https://github.com/uncomonq/FinalCalc/pckg/types"
-	pb "https://github.com/uncomonq/FinalCalc/proto"
 )
 
 func (app *Application) worker(resp *pb.GetTaskResponse, client pb.CalculatorServiceClient) {

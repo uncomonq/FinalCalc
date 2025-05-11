@@ -9,10 +9,10 @@ import (
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
+	"github.com/uncomonq/FinalCalc/pckg/consts"
 	"github.com/uncomonq/FinalCalc/pckg/consts/errors"
-	"github.com/uncomonq/FinalCalc/pckg/types"
-	"github.com/uncomonq/FinalCalc
 	"github.com/uncomonq/FinalCalc/pckg/rpn"
+	"github.com/uncomonq/FinalCalc/pckg/types"
 )
 
 // Получить, есть ли такой пользователь

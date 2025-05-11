@@ -11,8 +11,8 @@ import (
 	"syscall"
 	"time"
 
-	"https://github.com/uncomonq/FinalCalc/pckg/consts"
-	"https://github.com/uncomonq/FinalCalc/pckg/types"
+	"github.com/uncomonq/FinalCalc/pckg/consts"
+	"github.com/uncomonq/FinalCalc/pckg/types"
 )
 
 var (
